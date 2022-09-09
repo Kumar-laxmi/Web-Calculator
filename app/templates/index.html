@@ -1,0 +1,52 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Django Calculator</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+    
+        <!-- Favicon -->
+        <link rel="icon" href="{% static 'image/dollar_icon.png' %}">
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    
+        <!-- Template Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <section id="Display-area">
+                <div class="currentInput"></div>
+                <div class="answerScreen"></div>
+            </section>
+            <section class="keypad-btns">
+                <button type="button" class="fun_btn" id="clear" value="">C</button>
+                <button type="button" class="fun_btn" id="erase" value="">&#11013</button>
+                <button type="button" class="fun_btn" value="/">/</button>
+                <button type="button" class="fun_btn" value="%">%</button>
+                <button type="button" class="num_btn" value="7">7</button>
+                <button type="button" class="num_btn" value="8">8</button>
+                <button type="button" class="num_btn" value="9">9</button>
+                <button type="button" class="fun_btn" value="*">x</button>
+                <button type="button" class="num_btn" value="4">4</button>
+                <button type="button" class="num_btn" value="5">5</button>
+                <button type="button" class="num_btn" value="6">6</button>
+                <button type="button" class="fun_btn" value="-">-</button>
+                <button type="button" class="num_btn" value="1">1</button>
+                <button type="button" class="num_btn" value="2">2</button>
+                <button type="button" class="num_btn" value="3">3</button>
+                <button type="button" class="fun_btn" value="+">+</button>
+                <button type="button" class="num_btn" value="00">00</button>
+                <button type="button" class="num_btn" value="0">0</button>
+                <button type="button" class="num_btn" value=".">.</button>
+                <button type="button" class="fun_btn" id="evaluate" value="">=</button>
+            </section>
+        </div>
+
+        <script src="{% static 'js/script.js' %}"></script>
+    </body>
+</html>
